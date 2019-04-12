@@ -1,0 +1,7 @@
+<view class="main">
+  <block wx:for="{{tagList}}" wx:key="unique">
+    <view class="bg-view" style="{{item.bgStyle}};margin-right: {{rowSpace}};margin-top: {{lineSpace}}" data-text="{{item.text}}" bindtap="tapItem">
+      <text class="text-view" style="{{item.textStyle}}">{{item.text}}</text>
+    </view>
+  </block>
+</view>
